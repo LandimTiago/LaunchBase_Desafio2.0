@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+    --color-rocketseat:#7159c1;
+    --color-green:#33e25f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+}
+
+header {
+    background-color: var(--color-rocketseat);
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px;
+    border-bottom: 3px solid var(--color-rocketseat);
+}
+
+.logotipo {
+    position: absolute;
+}
+
+.logotipo a img {
+    height: 50px;
+    margin-top: -10px;
+    margin-left: 15;
+    padding-right: 23px;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.links {
+    font-size: 22px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links a + a {
+    padding-left: 30px;
+}
+
+.links a:hover {
+    font-weight: bold;
+    transition: all 0.2s ease 0s;
+}
+
+section {
+    display: flex;
+    position: relative;
+    height: auto;
+    padding: 60px 0;
+    margin-bottom: 32px;
+}
+
+section .text {
+    width: 40%;
+    margin-left: 50px;
+}
+
+section .text h2 {
+    color: rgb(75, 75, 75);
+    font-size: 41px;
+    line-height: 56px;
+}
+
+section .text p {
+    color: rgb(154, 142, 191);
+    font-size: 24px;
+    line-height: 36px;
+    margin: 16px 0px 0px;
+}
+
+section div img {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    width: 420px;
+}
+
+.techs {
+    text-align: center;
+}
+
+.techs h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: normal;
+    padding: 15px;
+    background-color: var(--color-rocketseat);
+}
+
+.techs li {
+    list-style: none;
+    padding: 44px;
+}
+
+.techs img {
+    width: 150px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 6px 2px rgba(0, 0, 0, 0.4);
+}
+
+.techs li p {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.techs .basic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.techs .beginer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer {
+    background-color: var(--color-rocketseat);
+    padding: 15px;
+    text-align: center;
+}
+
+footer a img {
+    width: 40px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a+a {
+    padding-left: 52px;
+}
