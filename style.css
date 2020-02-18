@@ -6,7 +6,6 @@
     --color-launchbase: #FD951F;
 }
 
-
 @-webkit-keyframes fadeIn {
     0% { opacity: 0; } 
     50% { opacity: 0.5; }
@@ -28,10 +27,10 @@
 }
 
 .fadeIn {
-    -webkit-animation: fadeIn 300ms ease-in-out;
-    -moz-animation: fadeIn 300ms ease-in-out;
-    -o-animation: fadeIn 300ms ease-in-out;
-    animation: fadeIn 300ms ease-in-out;
+    -webkit-animation: fadeIn 400ms ease-in-out;
+    -moz-animation: fadeIn 400ms ease-in-out;
+    -o-animation: fadeIn 400ms ease-in-out;
+    animation: fadeIn 400ms ease-in-out;
 }
 
 * {
@@ -61,8 +60,8 @@ header {
 }
 
 .logotipo a img {
-    height: 50px;
-    margin-top: -10px;
+    height: 36px;
+    margin-top: -2px;
     margin-left: 15;
     padding-right: 23px;
     border-right: 2px solid rgba(255, 255, 255, 0.2);
@@ -195,7 +194,6 @@ footer a+a {
 }
 
 .card {
-    width: 300px;
     padding: 100px 30px 30px 30px;
     border: 2px solid black;
 }
@@ -220,4 +218,61 @@ footer a+a {
 
 .image-container {
     margin-bottom: 100px;
+}
+
+
+/* === MODAL ==== */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal {
+    background-color: white;
+    width: 60%;
+    height: 80%;
+    margin: 5vh auto;
+    position: relative;
+    border-radius: 20px;
+}
+
+.modal .modal-content{
+    padding: 10px;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .maximize-modal {
+    color: black;
+    position: absolute;
+    right: 55px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/* === MODAL ATIVO ==== */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay.active iframe {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 5%;
+    border-radius: 20px;
 }
