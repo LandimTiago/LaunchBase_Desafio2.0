@@ -3,6 +3,35 @@
 :root {
     --color-rocketseat:#7159c1;
     --color-green:#33e25f;
+    --color-launchbase: #FD951F;
+}
+
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; } 
+    50% { opacity: 0.5; }
+    100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+    0% { opacity: 0; } 
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; } 
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 300ms ease-in-out;
+    -moz-animation: fadeIn 300ms ease-in-out;
+    -o-animation: fadeIn 300ms ease-in-out;
+    animation: fadeIn 300ms ease-in-out;
 }
 
 * {
@@ -24,6 +53,7 @@ header {
     box-sizing: border-box;
     padding: 30px;
     border-bottom: 3px solid var(--color-rocketseat);
+    box-shadow: 10px 0px 6px 2px rgba(0, 0, 0, 0.4);
 }
 
 .logotipo {
@@ -99,6 +129,7 @@ section div img {
     font-weight: normal;
     padding: 15px;
     background-color: var(--color-rocketseat);
+    box-shadow: 10px 0px 6px 2px rgba(0, 0, 0, 0.4);
 }
 
 .techs li {
@@ -108,7 +139,7 @@ section div img {
 
 .techs img {
     width: 150px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
     box-shadow: 10px 10px 6px 2px rgba(0, 0, 0, 0.4);
 }
 
@@ -145,4 +176,48 @@ footer a {
 
 footer a+a {
     padding-left: 52px;
+}
+
+
+/*===  CARD CURSOS  ===*/
+
+.content {
+    background-color: black;
+    color: white;
+    padding: 100px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.Starter, .LaunchBase, .GoStack {
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    padding: 100px 30px 30px 30px;
+    border: 2px solid black;
+}
+
+.Starter:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--color-rocketseat);
+    transition: all 200ms ease-in-out ;
+}
+
+.LaunchBase:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--color-launchbase);
+    transition: all 200ms ease-in-out ;
+}
+
+.GoStack:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--color-green);
+    transition: all 200ms ease-in-out ;
+}
+
+.image-container {
+    margin-bottom: 100px;
 }
